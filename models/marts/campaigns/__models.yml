@@ -1,0 +1,22 @@
+models: 
+  - name: customer_campaign
+    group: marketing
+    access: public
+    description: "Customer emails which were part of the campaign this year"
+    latest_version: 2
+    config:
+      contract:
+        enforced: true
+    
+    columns:
+      - name: email
+        data_type: varchar
+        description: "The email of prospect or customer"
+    versions:
+      - v: 1
+        deprecation_date: 2025-01-01
+        columns:
+          - include: all
+      - v: 2
+        columns:
+          - include: all
