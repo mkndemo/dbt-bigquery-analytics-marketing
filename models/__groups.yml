@@ -1,0 +1,5 @@
+groups: 
+  - name: marketing
+    owner:
+        name: Ben Jaffleck 
+        email: ben.jaffleck@jaffleshop.com
