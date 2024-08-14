@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt_bigquery_analytics_marketing'
+name: 'marketinggcp'
 version: '1.0.0'
 config-version: 2
 
@@ -22,8 +22,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 models:
-  dbt_bigquery_analytics_marketing:
-    # Applies to all files under models/example/
+  marketinggcp:
     staging:
       +materialized: table
     marts:
