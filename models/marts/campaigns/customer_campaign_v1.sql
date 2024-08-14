@@ -1,24 +1,16 @@
 {{
-    config(
-        materialized='table'
-    )
+    config( materialized='table' )
 }}
 
-with
+with source as (
 
-source as (
-
-    select * from {{ source('jaffle_shop', 'customers') }}
+    select * from {{ ref('stg_customers') }}
 
 ),
 
 renamed as (
 
-    select
-        email
-
-    from source
-    where email is not null
+    select email from source
 )
 
 select * from renamed
