@@ -3,14 +3,14 @@ models:
     group: marketing
     access: public
     description: "Customer emails which were part of the campaign this year"
-    latest_version: 2
+    latest_version: 1
     config:
       contract:
         enforced: true
     
     columns:
       - name: email
-        data_type: varchar
+        data_type: string
         description: "The email of prospect or customer"
     versions:
       - v: 1
