@@ -5,5 +5,4 @@ sources:
     database: dbt-tutorial
     schema: jaffle_shop  
     tables:
-      - name: orders
       - name: customers
