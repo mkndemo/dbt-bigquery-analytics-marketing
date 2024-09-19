@@ -1,0 +1,9 @@
+models:
+  - name: stg_customers_demo
+    description: First level cleaning for customer data which is conencted to orders
+    columns:
+      - name: customer_id
+        description: This is the unique customer id
+        data_tests:
+          - unique
+          - not_null
